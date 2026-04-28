@@ -36,7 +36,10 @@ jobs:
     steps:
 
       - name: Test
-        run: echo Secret ${{ secrets.SECRET_TEST }}
+        uses: j3diniz/DevSecOps20260426@main
+        with:
+          a: 1
+          b: 2
 
   deploy:
     runs-on: ubuntu-latest
