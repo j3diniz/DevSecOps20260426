@@ -1,4 +1,4 @@
-name: 'Soma'
+name: 'soma'
 author: 'J3di'
 description: 'Somar dois números.'
 inputs:
@@ -14,6 +14,6 @@ runs:
       with:
         python-version: '3.12'
 
-    - name: run Soma
+    - name: run soma
       shell: bash
       run: python soma.py -d=${{ inputs.a }} -l=${{ inputs.b }}
