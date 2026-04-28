@@ -24,8 +24,24 @@ jobs:
       - name: Build
         run: echo Hi, this is a build!
 
+  test:
+    runs-on: ubuntu-latest
+    
+    needs: build
+
+    steps:
+
       - name: Test
         run: echo Hi, this is a test!
+
+  deploy:
+    runs-on: ubuntu-latest
+    
+    needs: test
+
+    steps:
+
+
 
       - name: Deploy
         run: echo Hi, this is a deploy!
