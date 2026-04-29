@@ -13,10 +13,10 @@ runs:
       uses: actions/checkout@v4
   
     - name: Set up Python
-      uses: actions/setup-python@v6 # Upgrade from v4 to v6
+      uses: actions/setup-python@v5 # Upgrade from v4 to v6
       with:
         python-version: '3.12'
 
     - name: run soma
       shell: bash
-      run: python soma.py -d=${{ inputs.a }} -l=${{ inputs.b }}
+      run: python soma.py -a=${{ inputs.a }} -b=${{ inputs.b }}
