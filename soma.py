@@ -1,6 +1,7 @@
 import argparse
 
 if __name__ == '__main__':
+  parser = argparse.ArgumentParser()
   parser.add_argument("-a", "--a", type=str, required=True)
   parser.add_argument("-b", "--b", type=str, required=True)
 
