@@ -2,8 +2,8 @@ import argparse
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
-  parser.add_argument("-a", "--a", type=str, required=True)
-  parser.add_argument("-b", "--b", type=str, required=True)
+  parser.add_argument("-a", "--a", type=int, required=True)  # or float or str
+  parser.add_argument("-b", "--b", type=int, required=True)
 
   args = parser.parse_args()
 
